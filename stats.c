@@ -22,6 +22,7 @@
 
 
 #include <stdio.h>
+#include <math.h>
 #include "stats.h"
 
 /* Size of the Data Set */
@@ -37,7 +38,8 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-  print_array(test,SIZE)
+  print_array(test,SIZE);
+  
   print_statistics(test,SIZE);
 
 }
@@ -99,13 +101,13 @@ void print_statistics(unsigned char test[], int N)
 		sort_array(test,N);
 		
 		double med=find_median(test,N);
-		printf("%f\t",med);
+		printf("\n Median of dataset: %f\t",med);
 		double me=find_mean(test,N);
-		printf("%f\t",me);
+		printf("Mean of dataset: %f\t",me);
 		int max=find_maximum(test,N);
-		printf("%d\t",max);
+		printf("Maximum in the dataset: %d\t",max);
 		int min=find_minimum(test,N);
-		printf("%d\t",min);
+		printf("Minimum in the dataset: %d\t",min);
 		
 }
 

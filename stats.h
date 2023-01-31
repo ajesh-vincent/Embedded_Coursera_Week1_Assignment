@@ -49,7 +49,7 @@ void print_statistics();
  *
  * @return <Add Return Informaiton here>
  */
- void print_array(char[] data, int N);
+ void print_array(unsigned char*, int);
  
  /**
  * @brief Given an array of data and a length, returns the median value
@@ -64,7 +64,7 @@ void print_statistics();
  *
  * @return <Returns a median of array>
  */
- double find_median(char[] data, int N);
+ double find_median(unsigned char*, int);
  
  /**
  * @brief Given an array of data and a length, returns the mean value
@@ -80,7 +80,7 @@ void print_statistics();
  * @return <Returns a mean of array>
  */
  
- double find_mean(char data[], int N);
+ double find_mean(unsigned char*, int );
  
  /**
  * @brief Given an array of data and a length, returns the maximum value
@@ -96,7 +96,7 @@ void print_statistics();
  * @return <Returns a maximum of array>
  */
  
- double find_maximum(char data[], int N);
+ int find_maximum(unsigned char*, int N);
  
  /**
  * @brief Given an array of data and a length, returns the minimum value
@@ -111,7 +111,7 @@ void print_statistics();
  *
  * @return <Returns a minimum value of array>
  */
- double find_minimum(char data[], int N);
+ int find_minimum(unsigned char*, int N);
  
  /**
  * @brief Given an array of data and a length, returns the sorted Array
@@ -126,6 +126,6 @@ void print_statistics();
  *
  * @return <Void return type>
  */
- void sort_array(char data[], int N);
+ void sort_array(unsigned char*, int );
 
 #endif /* __STATS_H__ */
